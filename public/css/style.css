@@ -3,7 +3,7 @@
 :root {
 	--dark-color-a: #198cda;
 	--dark-color-b: #2b93b3;
-	--light-color: #c7cada;
+	--light-color: #eaece1;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -176,6 +176,14 @@ a {
 .join-main .btn {
 	margin-top: 20px;
 	width: 100%;
+}
+
+footer {
+	display: block;
+	justify-items: center;
+	background-color: slategray;
+	text-align: center;
+	margin-top: 540px;
 }
 
 @media (max-width: 700px) {

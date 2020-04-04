@@ -32,13 +32,13 @@ io.on('connection', socket => {
     socket.join(user.room);
 
     // Welcome current user
-    socket.emit('message', formatMessage(botName, 'Welcome to ChatCord!'));
+    socket.emit('message', formatMessage(botName, 'እንቛዕ ብደሓን መጻእኩም!'));
 
     // Broadcast when a user connects
     socket.broadcast
       .to(user.room)
       .emit('message',
-        formatMessage(botName, `${user.username} has joined the chat`)
+        formatMessage(botName, `${user.username} ኣትዩ ኣሎ`)
       );
 
     // Send users and room info
@@ -62,7 +62,7 @@ io.on('connection', socket => {
     if (user) {
       io.to(user.room).emit(
         'message',
-        formatMessage(botName, `${user.username} has left the chat`)
+        formatMessage(botName, `${user.username} ወጽዩ ኣሎ`)
       );
 
       // Send users and room info
