@@ -4,8 +4,8 @@
   "description": "chat time web application",
   "main": "index.js",
   "scripts": {
-    "start": "nodem server.js",
-    "dev": "nodemon server"
+    "start": "nodemon server.js",
+    "dev": "node server"
   },
   "author": "Robel",
   "license": "ISC",
